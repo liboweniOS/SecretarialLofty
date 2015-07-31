@@ -1,0 +1,55 @@
+//
+//  PrefixHeader.pch
+//  SecretarialLofty
+//
+//  Created by SecretarialLofty on 15/7/8.
+//  Copyright (c) 2015年 文书轩. All rights reserved.
+//
+
+#ifndef SecretarialLofty_PrefixHeader_pch
+#define SecretarialLofty_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - 类目
+#import "UIView+AddConstraint.h"
+
+// 导入推荐，分类二级跳转页面
+//#import "RecommendAndCategoriesTableViewController.h"
+
+// 导入所有二级页面公用的三级跳转页面
+#import "CommonTableViewController.h"
+
+// 导入AFNetWork第三方
+#import "AFNetworking.h"
+
+// 导入自定义view
+#import "LBWCellHeaderView.h"
+
+// 导入音频播放帮助类
+#import "AVPlayerHelper.h"
+
+// 导入自定义进度条类
+#import "MCProgressBarView.h"
+
+// 导入自定义日期转换类
+#import "NSString+TimerFormatted.h"
+
+// 导入播放控制器
+#import "CommonPlayViewController.h"
+
+// 导入Track模型
+#import "Track.h"
+
+// 获取根视图的size宏
+#define kScreenSize (self.frame.size)
+
+#define kScreenNewSize ([UIScreen mainScreen].bounds)
+// 获取根视图的origin宏
+#define kScreenOrigin (self.frame.origin)
+
+#define kWidth ([UIScreen mainScreen].bounds.size.width)
+#define kHeight ([UIScreen mainScreen].bounds.size.height)
+
+#endif
